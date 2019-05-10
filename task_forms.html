@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+<table border="1" cellspacing="0" align="center" width="700px">
+    <caption><h1>Формы</h1></caption>
+
+    <tr>
+        <td>
+            <form action="http://sc.it-academy.by/fe/form.php" method="get" name="search">
+                <label for="search">Строка поиска</label><br>
+                <input type="search" maxlength="10" id="search"><input type="submit" value="Искать"><br>
+                <label for="site">на сайте<input type="radio" id="site" name="radio"></label>
+                <label for="google">в google<input type="radio" id="google" name="radio"></label>
+            </form>
+        </td>
+        <td>
+            <form action="http://sc.it-academy.by/fe/form.php" method="get" name="search2">
+                <label for="search2">Строка поиска</label><br>
+                <input type="search" maxlength="10" id="search2" autofocus required>*<input type="submit"
+                                                                                            value="Искать"><br>
+                <label for="site1">на сайте<input type="radio" id="site1" name="radio"></label>
+                <label for="google1">в google<input type="radio" id="google1" name="radio"></label>
+            </form>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Авторизируйтесь
+            <form action="http://sc.it-academy.by/fe/form.php" method="get" name="authorization">
+                <input type="text" id="login" required>*<label for="login">Логин</label><br>
+                <input type="text" id="pass" required>*<label for="pass">Пароль</label><br>
+                <input type="checkbox" id="checkbox"><label for="checkbox">Оставаться в системе</label><br>
+                <input type="submit" value="Войти">
+            </form>
+        </td>
+        <td>Как вам?
+            <form action="http://sc.it-academy.by/fe/form.php" method="get" name="rating">
+                <input type="radio" name="voting" id="nothing"><label for="nothing">ничего</label><br>
+                <input type="radio" name="voting" id="not_bad"><label for="not_bad">неплохо</label><br>
+                <input type="radio" name="voting" id="good"><label for="good">хорошо</label><br>
+                <input type="radio" name="voting" id="super"><label for="super">супер</label><br>
+                <input type="submit">
+                <input type="hidden" name="date_voite" value="2013.12.31">
+            </form>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Оставте ваш отзыв
+            <form action="http://sc.it-academy.by/fe/form.php" method="post" name="review">
+                <input type="text" id="name" required>*<label for="name">Имя</label><br>
+                <input type="email" id="email" required>*<label for="email">e-mail</label><br>
+                <textarea name="review">Форма отправки</textarea><br>
+                <input type="submit">
+
+            </form>
+        </td>
+        <td>Города РБ
+            <form action="http://sc.it-academy.by/fe/form.php" method="get" name="city">
+                <select>
+                    <optgroup label="Города РБ">
+                        <option value="1">Брест</option>
+                        <option value="2">Минск</option>
+                        <option value="3">Витебск</option>
+                    </optgroup>
+                    <optgroup label="Города России">
+                        <option value="1">Москва</option>
+                        <option value="2">Рязань</option>
+                        <option value="3">Магадан</option>
+                    </optgroup>
+                </select>
+                <input type="submit" value="Ок">
+
+            </form>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Upload
+            <form action="http://sc.it-academy.by/fe/form.php" method="post" name="file_upload" enctype="multipart/form-data">
+                <label for="upload">Файл:</label><br>
+                <input type="file" id="upload"><br>
+                <label for="shelf_life">Срок хранения (года):</label><br>
+                <input type="number" id="shelf_life">
+                <input type="submit" value="загрузить">
+
+            </form>
+        </td>
+        <td>
+            <form action="http://sc.it-academy.by/fe/form.php" method="get" name="search3">
+                <label for="search3">Строка поиска</label><br>
+                <input type="search" id="search3" pattern="[А-Яа-яЁё ]+"><br>
+                <label for="phone_number"><em>Телефонный номер в формате<br>
+                    +ХХХ-ХХ-ХХХХХХХ, где Х - любое число<br></em></label>
+                <input type="tel" id="phone_number" pattern='[\+]\d{3}[\-]\d{2}[\-]\d{7}'><br>
+                <input type="submit" value="Проверить">
+
+            </form>
+        </td>
+    </tr>
+
+
+</table>
+</body>
+</html>

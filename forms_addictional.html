@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addictional</title>
+</head>
+<body>
+<h1 align="center">Заполните анкету</h1>
+<table border="1" cellspacing="0" align="center" cellpadding="15">
+    <tr>
+        <td>
+            <form name="personal_data" method="post" action="http://sc.it-academy.by/fe/form.php">
+                Личные данные<br><br>
+                <input type="text" pattern="^[А-Яа-яЁё]+$" value="Фамилия" size="25" required autofocus><br>
+                <input type="text" pattern="^[А-Яа-яЁё]+$" value="Имя" size="20" required><br>
+                <input type="text" pattern="^[А-Яа-яЁё]+$" value="Отчество" size="24" required>
+
+            </form><br>
+            <table border="1" cellspacing="0" align="center">
+                <tr>
+                    <td>
+                        <form name="passport_data" method="post" action="http://sc.it-academy.by/fe/form.php">
+                            Паспортные данные<br>
+                            <input type="text" required pattern="[A-Z]{2,}" size="2" maxlength="2" value="AA">
+                            <input type="text" required pattern="[0-9]{7,}" maxlength="7" size="7" value="1234567">
+                        </form>
+                    </td>
+                </tr>
+            </table><br>
+
+            <table border="1" cellspacing="0" align="center">
+                <tr>
+                    <td>
+                        <form name="birthday" method="post" action="http://sc.it-academy.by/fe/form.php">
+                            Дата рождения<br>
+                            <input type="text" pattern="[0-9]{4}" placeholder="Год рождения"><br>
+                            <select>
+                                <option>Январь</option>
+                                <option>Февраль</option>
+                                <option>Март</option>
+                                <option>Апрель</option>
+                                <option>Май</option>
+                                <option>Июнь</option>
+                                <option>Июль</option>
+                                <option>Август</option>
+                                <option>Сентябрь</option>
+                                <option>Октябрь</option>
+                                <option>Ноябрь</option>
+                                <option>Декабрь</option>
+                            </select><br>
+                            <input type="number" min="1" max="31" step="1" placeholder="Число">
+
+                        </form>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <select required >
+                <option>РБ</option>
+                <option>РФ</option>
+            </select><br>
+            Адрес:<br>
+            <textarea></textarea>
+        </td>
+    </tr>
+</table>
+<table border="1" cellspacing="0" align="center" cellpadding="15">
+    <tr>
+        <td>
+            <form name="interests" method="post" action="http://sc.it-academy.by/fe/form.php">
+                Интересы<br>
+                <table border="1" cellspacing="0" align="center">
+                    <tr>
+                        <td>
+                            Хобби<br>
+                            <input type="checkbox" name="hobby" id="fishing">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
